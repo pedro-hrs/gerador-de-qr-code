@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="pt-Br">
+
+<head>
+  <title>Gerador de Qr-Code</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/8.11.8/sweetalert2.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="shortcut icon" href="./img/logotipo.png" type="image/x-icon">
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.2.0/css/all.css">
+
+<body>
+  <main>
+    <div class="notes">
+      <img src="./img/logotipo.png" alt="Gerador de QR" class="logoQR">
+      <h1 class="titulo">Gerador de QR-Code</h1>
+      <input class="form-control" id="link" placeholder="Digite aqui seu link"><br />
+      <button class="btn btn-block btn-light" onclick="gerarQr()">Gerar Qr-Code</button>
+      <div class="pt-2 hidden" id="qrcode"></div>
+      <button class="btn btn-block btn-dark hidden" id="download" onclick="baixarQr()">Baixar</button>
+    </div>
+    <footer>
+      <small> &copy 2021- Pedro Rodrigues
+      </small><br>
+      <a href="http://www.github.com/pedro-hrs"> <i class="fab pr-2 fa-github" aria-hidden="true"></i></a> <a
+        href="http://www.instagram.com/pedrohrs_"><i class="fab fa-instagram" aria-hidden="true"></i></a>
+    </footer>
+  </main>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+  <script type="text/javascript" src="./js/jquery.min.js"></script>
+  <script type="text/javascript" src="./js/qrcode.js"></script>
+  <script src="./js/index.js"></script>
+</body>
+
+</html>
